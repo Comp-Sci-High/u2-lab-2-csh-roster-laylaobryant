@@ -10,11 +10,12 @@
 // Create an array for each class with the following names:
 // csRoster, mathRoster, elaRoster, ssRoster, electivesRoster (5 arrays total)
 // Each should contain 3 unique student names (you can make them up or use classmates)
-
-
-
-
-
+let roster =["csRoster", "mathRoster", "elaRoster", "ssRoster", "electivesRoster"]
+csRoster=["john", "stacy", "ashley"]
+mathRoster=["kenzie", "jordan", "noah"]
+elaRoster =["amani", "melody", "jaidyn"]
+ssRoster =["emma", "liam", "mia"]
+electivesRoster=["ava", "lily", "chloe"]
 // ----------------------------------------------------------
 // Part 2 [2 pts]
 // ----------------------------------------------------------
@@ -25,22 +26,17 @@
 // Add Peach → ELA
 // Add Laila → Social Studies
 // Add Jayden → Electives
-
-
-
-
-
-
+csRoster.push("JP")
+mathRoster.push("Arnold")
+elaRoster.push("Peach")
+ssRoster.push("Laila")
+electivesRoster.push("Jayden")
 // ----------------------------------------------------------
 // Part 3 [2 pts]
 // ----------------------------------------------------------
 // Jayden has unenrolled from CSH.
 // Use an array method to remove Jayden from the electivesRoster.
-
-
-
-
-
+electivesRoster.splice("jayden")
 // ----------------------------------------------------------
 // Part 4 [2 pts]
 // ----------------------------------------------------------
@@ -50,16 +46,9 @@
 // 2: elaRoster
 // 3: ssRoster
 // 4: electivesRoster
-
-
-
-
-
+cshRosters =[csRoster, mathRoster, elaRoster, ssRoster, electivesRoster]
 // Using ONLY cshRosters and list indexing, print the name of the
 // second student in the ssRoster (index 3 in cshRosters)
-
-
-
-
+console.log(cshRosters[3][1])
 
 // ✅ Done! 
